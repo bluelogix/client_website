@@ -7,7 +7,6 @@ html, body {
     height: 100%;
 }
 body {
-    background-color: rgb(198, 198, 191);
     font-family: 'Maven Pro', sans-serif;
     overflow-x: hidden;
 }
@@ -135,7 +134,7 @@ section {
 }
 
 .about {
-    color: white;
+    color: black;
 }
 .about h2 {
     text-align: center;
