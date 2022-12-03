@@ -159,19 +159,5 @@ section {
     body{
         padding:5%;
     }
-    /* .videos {
-        display: flex;
-        gap: 2rem;
-    }
-    .about {
-        display: flex;
-        gap: 5rem;
-        justify-content: space-between;
-    }
-    .about img {
-        width: 0%;
-    }
-    .about h2 {
-        text-align: start;
-    } */
+
 }
