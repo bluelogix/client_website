@@ -1,3 +1,4 @@
+gsap.registerPlugin(ScrollTrigger);
 const burger = document.querySelector('nav svg');
 
 burger.addEventListener('click', () => {
@@ -22,6 +23,7 @@ videos.forEach((video) => {
         trigger: video,
         start: 'top center',
         end: 'bottom center',
+        scrub: true,
         onEnter: () => {
             gsap.to(video, {opacity:1});
             video.play();
