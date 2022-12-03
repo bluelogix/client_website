@@ -35,18 +35,22 @@ videos.forEach((video) => {
 })
 
 let mm = gsap.matchMedia();
-mm.add('max-width: 500px', () => {
-    ScrollTrigger.create({
-        trigger: video,
-        start: 'top center',
-        end: 'bottom center',
-        scrub: true,
-        onEnter: () => {
-            gsap.to(video, {opacity:1});
-            video.play();
-        },
-        onEnterBack: () => video.play(),
-        onLeave: () => video.pause(),
-        onLeaveBack: () => video.pause()
+
+videos.forEach((video) => {
+    mm.add('max-width: 500px' , () => {
+        ScrollTrigger.create({
+            trigger: video,
+            start: 'top center',
+            end: 'bottom center',
+            scrub: true,
+            onEnter: () => {
+                gsap.to(video, {opacity:1});
+                video.play();
+            },
+            onEnterBack: () => video.play(),
+            onLeave: () => video.pause(),
+            onLeaveBack: () => video.pause()
+        })
     })
+
 })
