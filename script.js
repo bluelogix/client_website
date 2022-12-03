@@ -45,5 +45,8 @@ mm.add('max-width: 500px', () => {
             gsap.to(video, {opacity:1});
             video.play();
         },
+        onEnterBack: () => video.play(),
+        onLeave: () => video.pause(),
+        onLeaveBack: () => video.pause()
     })
 })
