@@ -17,23 +17,6 @@ burger.addEventListener('click', () => {
 
 const videos = gsap.utils.toArray('.video');
 
-
-// videos.forEach((video) => {
-//     ScrollTrigger.create({
-//         trigger: video,
-//         start: 'top center',
-//         end: 'bottom center',
-//         scrub: true,
-//         onEnter: () => {
-//             gsap.to(video, {opacity:1});
-//             video.play();
-//         },
-//         onEnterBack: () => video.play(),
-//         onLeave: () => video.pause(),
-//         onLeaveBack: () => video.pause()
-//     })
-// })
-
 let mm = gsap.matchMedia();
 console.log(mm)
 mm.add('(min-width: 500px)', () => {

@@ -20,7 +20,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    color: white;
 }
 nav svg {
     cursor: pointer;
@@ -148,6 +148,8 @@ section {
 .about p {
     line-height: 150%;
     font-size: 1.1rem;
+    text-align: left;
+
 }
 .about img {
     width: 100%;
